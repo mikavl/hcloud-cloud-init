@@ -12,7 +12,7 @@ DEBIAN_FRONTEND=noninteractive apt-get purge --assume-yes --autoremove \
 
 # Get the first ethernet interface
 interface="$(ip link show |
-  grep --extended-regexp '^[0-9]+:\s+e' |
+  grep --extended-regexp '^[0-9]+:\s+en' |
   head --lines 1 |
   tr --delete ':' |
   awk '{print $2}')"
