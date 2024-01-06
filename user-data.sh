@@ -1,4 +1,7 @@
-#!/usr/bin/env bash
+#!/bin/bash
+#
+# cloud-init script to configure a VM with a static private IP address.
+# Copy-paste into user data.
 set -e
 set -o noglob
 set -u
